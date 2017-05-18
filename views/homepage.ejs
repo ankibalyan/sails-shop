@@ -9,85 +9,16 @@
 <div class="products-grid text-muted">
   <div class="container">
     <div class="row">
+      <% products.forEach(function (product) { %>
         <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
+          <img data-src="holder.js/100px280/thumb" alt="<%= product.title %>">
+          <p class="card-text"><%= product.title %></p>
           <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
+            <span class="float-right" ><a href="/cart/add/<%= product.sku %>" class="btn btn-sm btn-info">Add to Cart</a></span>
+            <span>Rs. <%= product.price %></span>
           </p>
-          <span>Rs. 100</span>
         </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
-
-        <div class="card">
-          <img data-src="holder.js/100px280/thumb" alt="">
-          <p class="card-text">Smple Product</p>
-          <p class="card-text">
-            <span class="float-right" ><a href="#" class="btn btn-sm btn-info">Add to Cart</a></span>
-          </p>
-          <span>Rs. 100</span>
-        </div>
+      <% }) %>
     </div>
   </div>
 </div>
