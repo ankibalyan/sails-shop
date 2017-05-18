@@ -17,5 +17,9 @@ module.exports = {
       adapter: 'sails-mongo',
       url: 'mongodb://user:password@host:port/database',
     },
+  },
+  models: {
+    // drop only for development, in else it should be safe
+    migrate: 'drop'
   }
 };
