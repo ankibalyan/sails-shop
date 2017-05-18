@@ -36,4 +36,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'get /cart/add/:id': { action: 'cart/add' },
+  'get /cart': { action: 'cart/index' },
+
 };
