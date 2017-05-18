@@ -67,7 +67,9 @@
 
    // Bring in `.js` files for any other client-side JavaScript dependencies.
    // (e.g. Lodash, jQuery, React, bootstrap.js, Ember, Angular, etc.)
-   'dependencies/**/*.js',
+   'dependencies/jquery.slim.min.js',
+   'dependencies/tether.min.js',
+   'dependencies/bootstrap.min.js',
 
    // All of the rest of your custom client-side js files will be injected here,
    // in no particular order.  To customize the ordering, add additional items
@@ -145,4 +147,3 @@
    }
    return require('path').join('assets/',tplPath);
  });
-
