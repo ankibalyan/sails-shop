@@ -15,7 +15,8 @@
     "sails-mongo": "^1.0.0-9"
   },
   "devDependencies": {
-    "eslint": "3.5.0"
+    "eslint": "3.5.0",
+    "sails-hook-autoreload": "^1.0.0"
   },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
