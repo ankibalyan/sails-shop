@@ -4,7 +4,9 @@
       <div class="col col-md-6 offset-md-3 col-sm-6 offset-sm-3">
         <h1>Checkout</h1>
         <h4>Your Total Rs. <%= total %></h4>
-        <div id="payment-errors" class="alert alert-danger invisible" role="alert"></div>
+        <div id="payment-errors" class="alert alert-danger <%= noError ? 'invisible' : '' %>" role="alert">
+          <%= errMsg %>
+        </div>
         <form action="" method="post" id="checkout-form">
           <div class="row form-group">
             <label for="name" class="col-12 col-form-label">Name</label>

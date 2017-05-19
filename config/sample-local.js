@@ -21,5 +21,8 @@ module.exports = {
   models: {
     // drop only for development, in else it should be safe
     migrate: 'drop'
+  },
+  custom: {
+    stripeSecret: 'xxxx-xxxxx-xxxxx-xxxx'
   }
 };

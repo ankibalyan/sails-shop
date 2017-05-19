@@ -16,6 +16,7 @@ module.exports = function index(req, res) {
   }
 
   const cart = new Cart(req.session.cart);
-  return res.view('shop/checkout', { total: cart.totalPrice });
+  const errMsg = req.flash('error')[0];
+  return res.view('shop/checkout', { total: cart.totalPrice, errMsg, noError: !errMsg  });
 
 };

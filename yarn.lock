@@ -263,6 +263,10 @@ bluebird@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.2.1.tgz#3cecf3504904c30ce3e79c170877e893a11910fd"
 
+bluebird@^2.10.2:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
+
 body-parser@1.17.1:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.17.1.tgz#75b3bc98ddd6e7e0d8ffe750dfaca5c66993fa47"
@@ -2067,6 +2071,10 @@ lodash.isobject@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/lodash.isobject/-/lodash.isobject-3.0.2.tgz#3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d"
 
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+
 lodash.isregexp@3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/lodash.isregexp/-/lodash.isregexp-3.0.5.tgz#e0f596242f2fa228a840086b6c8ad82e4b71fd2d"
@@ -2776,6 +2784,10 @@ qs@6.4.0, qs@~6.4.0:
 qs@~5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-5.1.0.tgz#4d932e5c7ea411cca76a312d39a606200fd50cd9"
+
+qs@~6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.0.4.tgz#51019d84720c939b82737e84556a782338ecea7b"
 
 random-bytes@~1.0.0:
   version "1.0.0"
@@ -3574,6 +3586,15 @@ strip-json-comments@~1.0.1:
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+stripe@^4.19.1:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-4.19.1.tgz#edc1dc7395cce8fa828f254ab6fcd26f074f76df"
+  dependencies:
+    bluebird "^2.10.2"
+    lodash.isplainobject "^4.0.6"
+    object-assign "^4.1.0"
+    qs "~6.0.4"
 
 supports-color@^1.3.0:
   version "1.3.1"
