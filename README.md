@@ -1,12 +1,17 @@
 # sails-shop
 
-a [Sails](https://sailsjs.com) application
+a simple sails js shop and ecommerce application
 
+# start
 
-### Links
+clone on your local system / server
+`git git@github.com:ankibalyan/sails-shop.git`
+`ccd sails-shop`
 
-+ [Sails framework documentation](https://sailsjs.com/documentation)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/studio)
+`npm install` or `yarn`
+
+create a `.env` file using `.env-sample` file present in source files.
+
+start your application with
+
+`npm start` or `yarn start`
