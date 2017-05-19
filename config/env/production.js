@@ -46,7 +46,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      adapter: 'sails-mysql',
+      adapter: 'sails-mongo',
       url: process.env.MONGO_URL,
     },
     //--------------------------------------------------------------------------
@@ -220,9 +220,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    // ],
+    onlyAllowOrigins: [
+      'https://sails-shop.herokuapp.com',
+    ],
 
 
     /***************************************************************************
@@ -288,7 +288,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
 
   },
 
