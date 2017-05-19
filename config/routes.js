@@ -37,6 +37,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   'get /login': { view: 'auth/login' },
+  'get /logout': 'auth/logout',
   'get /auth/google': { action: 'auth/google' },
   'get /auth/google/callback': { action: 'auth/google-callback' },
 
