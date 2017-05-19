@@ -15,6 +15,7 @@
    Product.find().exec(function (err, products) {
       // Handle unknown errors.
       if (err) {return res.serverError(err);}
-      return res.view('homepage', { products: products });
+      const successMsg = req.flash('success')[0];
+      return res.view('homepage', { products: products, successMsg, noMessage: !successMsg });
    });
  };
