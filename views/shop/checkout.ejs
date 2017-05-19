@@ -1,0 +1,47 @@
+<div class="cart-checkout text-muted">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-6 offset-md-3 col-sm-6 offset-sm-3">
+        <h1>Checkout</h1>
+        <h4>Your Total Rs. <%= total %></h4>
+        <form action="" method="post" id="checkout-form">
+          <div class="row form-group">
+            <label for="name" class="col-12 col-form-label">Name</label>
+            <div class="col-12"><input type="text" name="name" id="name" class="form-control"></div>
+          </div>
+          <div class="row form-group">
+            <label for="address" class="col-12 col-form-label">Address</label>
+            <div class="col-12"><input type="text" name="address" id="address" class="form-control"></div>
+          </div>
+          <div class="row form-group">
+            <label for="card-name" class="col-12 col-form-label">Name on Card</label>
+            <div class="col-12"><input type="text" name="card-name" id="card-name" class="form-control"></div>
+          </div>
+          <div class="row form-group">
+            <label for="card-number" class="col-12 col-form-label">Card Number</label>
+            <div class="col-12"><input type="text" name="card-number" id="card-number" class="form-control"></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="row form-group">
+                <label for="card-expiry-month" class="col-12 col-form-label">Expiry Month</label>
+                <div class="col-12"><input type="text" name="card-expiry-month" id="card-expiry-month" class="form-control"></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row form-group">
+                <label for="card-expiry-year" class="col-12 col-form-label">Expiry Year</label>
+                <div class="col-12"><input type="text" name="card-expiry-year" id="card-expiry-year" class="form-control"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="card-cvc" class="col-12 col-form-label">CVC</label>
+            <div class="col-12"><input type="text" name="card-cvc" id="card-cvc" class="form-control"></div>
+          </div>
+          <button type="submit" class="btn btn-success">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

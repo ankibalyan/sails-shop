@@ -39,4 +39,6 @@ module.exports.routes = {
   'get /cart/add/:id': { action: 'cart/add' },
   'get /cart': { action: 'cart/index' },
 
+  'get /checkout': { action: 'checkout/index' },
+  'post /checkout': { action: 'checkout/post' },
 };
