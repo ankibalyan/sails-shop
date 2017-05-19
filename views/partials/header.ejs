@@ -14,9 +14,22 @@
             <span class="badge badge-pill badge-info"><%= req.session.cart ? req.session.cart.totalQty : 0 %></span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="/auth/google" class="nav-link">Login with Goggle</a>
-        </li>
+        <% if(req.user) { %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              My Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">My Orders</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a href="/auth/google" class="nav-link">Login with G+</a>
+          </li>
+        <% } %>
       </ul>
     </div>
   </div>
