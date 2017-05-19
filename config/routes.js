@@ -36,6 +36,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'get /login': { view: 'auth/login' },
+  'get /auth/google': { action: 'auth/google' },
+  'get /auth/google/callback': { action: 'auth/google-callback' },
+
   'get /cart/add/:id': { action: 'cart/add' },
   'get /cart': { action: 'cart/index' },
 
