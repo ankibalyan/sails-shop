@@ -5,8 +5,10 @@ a simple sails js shop and ecommerce application
 # start
 
 clone on your local system / server
-`git git@github.com:ankibalyan/sails-shop.git`
-`ccd sails-shop`
+
+`git clone https://github.com/ankibalyan/sails-shop.git`
+
+`cd sails-shop`
 
 `npm install` or `yarn`
 
