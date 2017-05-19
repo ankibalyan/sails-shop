@@ -48,8 +48,7 @@
 ################################################
 
 config/local.js
-
-
+.env
 
 
 
@@ -129,4 +128,3 @@ nbproject
 .idea
 .node_history
 dump.rdb
-

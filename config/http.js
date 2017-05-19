@@ -29,9 +29,13 @@ module.exports.http = {
     *                                                                          *
     ***************************************************************************/
     flash: require('connect-flash')(),
+    passportInit: require('passport').initialize(),
+    passportSession: require('passport').session(),
     order: [
       'cookieParser',
       'session',
+      'passportInit',
+      'passportSession',
       'flash',
       'bodyParser',
       'compress',
