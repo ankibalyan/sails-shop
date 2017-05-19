@@ -42,6 +42,7 @@
             <label for="card-cvc" class="col-12 col-form-label">CVC</label>
             <div class="col-12"><input type="text" name="card-cvc" id="card-cvc" class="form-control"></div>
           </div>
+          <input type="hidden" name="_csrf" value="<%= _csrf %>" />
           <button type="submit" class="btn btn-success">Buy Now</button>
         </form>
       </div>
