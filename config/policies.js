@@ -46,4 +46,8 @@ module.exports.policies = {
   //
   // },
 
+  checkout: {
+    '*': 'isLoggedIn'
+  },
+
 };
